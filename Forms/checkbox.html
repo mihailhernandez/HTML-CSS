@@ -1,0 +1,30 @@
+<!--
+     <input>
+     type="checkbox"
+     Checkboxes allow users to select (and unselect) one or more
+     options in answer to a question.
+
+     name
+     The name attribute is sent to the server with the value of the
+     option(s) the user selects. When a question provides users with
+     options for answers in the form of checkboxes, the value of the
+     name attribute should be the same for all of the buttons that
+     answer that question.
+
+     value
+     The value attribute indicates the value sent to the server if this
+     checkbox is checked.
+
+    checked
+     The checked attribute indicates that this box should be checked
+     when the page loads. If used, its value should be checked.
+-->
+
+<form action="checkbox.php">
+    <p>Favourite social media?
+        </br>
+        <input type="checkbox" name="social_media" value="facebook"/>Facebook
+        <input type="checkbox" name="social_media" value="twitter"/>Twitter
+        <input type="checkbox" name="social_media" value="ask.fm"/>Ask.fm
+    </p>
+</form>
