@@ -1,0 +1,22 @@
+<!--
+     <input>
+     If you want to allow users to upload a file (for example an
+     image, video, mp3, or a PDF), you will need to use a file input
+     box.
+
+     type="file"
+     This type of input creates a box that looks like a text input
+     followed by a browse button. When the user clicks on the
+     browse button, a window opens up that allows them to select a
+     file from their computer to be uploaded to the website.
+
+     When you are allowing users to upload files, the method
+     attribute on the <form> element must have a value of post. (You
+     cannot send files using the HTTP get method.)
+-->
+
+<form action="upload.php" method="post">
+    <p>Upload a file here:</p>
+    <input type="file" name="user-file"/></br>
+    <input type="submit" value="Upload"/>
+</form>
