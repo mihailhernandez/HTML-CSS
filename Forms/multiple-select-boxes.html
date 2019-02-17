@@ -1,0 +1,26 @@
+<!-- 
+     <select>
+     size
+     You can turn a drop down select box into a box that shows more
+     than one option by adding the size attribute. Its value should
+     be the number of options you want to show at once. In the
+     example you can see that three of the four options are shown.
+     Unfortunately, the way that browsers have implemented this
+     attribute is not perfect, and it should be tested throroughly if
+     used (in particular in Firefox and Safari on a Mac).
+
+     multiple 
+     You can allow users to select multiple options from this list by
+     adding the multiple attribute with a value of multiple. 
+-->
+
+<form action="selection.php">
+    <p>
+        Which music genres do you like?
+    </p>
+    <select name="genres" multiple="multiple" size="3">
+        <option value="techno">Techno</option>
+        <option value="rock">Rock</option>
+        <option value="jazz">Jazz</option>
+    </select>
+</form>
