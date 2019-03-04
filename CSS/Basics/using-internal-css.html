@@ -1,0 +1,52 @@
+<!--
+     You can also include CSS rules within an HTML page by placing
+     them inside a <style> element, which usually sits inside the
+     <head> element of the page.
+
+     The <style> element should use the type attribute to indicate
+     that the styles are specified in CSS. The value should be text/css.
+
+     When building a site with more than one page, you should use
+     an external CSS style sheet. This:
+
+     ● Allows all pages to use the same style rules (rather than
+     repeating them in each page).
+
+     ● Keeps the content separate from how the page looks.
+
+     ● Means you can change the styles used across all pages
+       by altering just one file (rather than each individual page).
+
+     Using Internal CSS In HTML 4 and Transitional
+     XHTML, you could also use a style attribute on most of
+     the elements that appear in the body of a page. The CSS rules
+     that appeared within the value of the attribute would only apply
+     to that one element. You should avoid using this attribute in any
+     new site but I mention it here because you may see it used in
+     older code. Here is an example that changes the color of the text
+     in a single paragraph red:
+
+     <p style="color:red;">
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using Internal CSS</title>
+        <style type="text/css">
+            body {
+                font-family: arial;
+                background-color: rgb(185,179,175);
+            }
+            h1 {
+                color: rgb(255,255,255);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Potatoes</h1>
+        <p>There are dozens of different potato
+            varieties. They are usually described as
+            early, second early and maincrop.</p>
+    </body>
+</html>
