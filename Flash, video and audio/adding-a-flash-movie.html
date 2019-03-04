@@ -1,0 +1,53 @@
+<!--
+     The most popular way of adding Flash into a web page
+     is using JavaScript. There are several scripts that allow you
+     to do this without an in-depth understanding of the JavaScript
+     language.
+
+     One advantage to using this technique is that it allows
+     browsers to show alternative content for users whose
+     browsers are not capable of showing Flash.
+
+     This technique uses a <div> element to create a space where
+     the Flash movie should sit. The <div> element has an id
+     attribute whose value is used by the SWFObject script. In this
+     example, the value of the id attribute is bird.
+     Inside the <div> element you can place the alternative content
+     for users who are not able to play Flash.
+
+     The SWFObject script will check to see if the user's browser can
+     play the Flash movie. If it can, the script will replace the content of
+     the <div> with the .swf file.
+
+     For users who cannot see the Flash movie, you could show a
+     still from the movie instead. You might also like to consider using
+     a text description of the Flash file.
+
+     If you use a text description as alternative content, then you can
+     achieve two further benefits:
+
+     1. The text can be accessed by those with visual and/or physical
+     impairments who are not able to interact with the Flash file.
+
+     2. The text can be indexed by search engines (which are not as
+     effective at indexing SWF files), increasing the chance that your
+     content will be found.
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adding a Flash Movie</title>
+            <script type="text/javascript"
+                    src="http://ajax.googleapis.com/ajax/libs/
+                         swfobject/2.2/swfobject.js"></script>
+            <script type="text/javascript">
+            swfobject.embedSWF("flash/bird.swf",
+                               "bird", "400", "300", "8.0.0");</script>
+    </head>
+    <body>
+        <div id="bird"><p>An animation of a bird taking
+                            a shower</p></div>
+    </body>
+</html>
